@@ -12,7 +12,7 @@ Let us start with, how anyone (human/machine) searches. Say you have a table (le
 | 4 | Pradeep  | Masti  |
 | 5 |  Raghav | DDLJ  |
 
-*[Visualize above table with millions of rows]*
+*[Visualize above table with millions of rows]*  
 *[S.No. in numerical order]*
 
 And someone asks you to tell `FavMovie` of `Nitin`. Since there is no order/pattern in the `Name` column, you are left with no option other than to search one by one from starting (a full column scan) matching each `Name` with `Nitin` Right?
@@ -68,11 +68,15 @@ Let us, now analyze each data structure:
 
 4. Queue - Similar to stack (FIFO instead of LIFO) it also takes O(n) search time. Therefore we can discard it as well.
 
-5. Binary search tree - O(log n) search time, also insertion and deletion overhead is also O(log n). Best among all, till now. Let us shortlist this.
+5. Unsorted linked list - Takes O(n) search time. Therefore we can discard it as well.
 
-6. Heap - O(n) search time, so we can discard this.
+6. Sorted linked list - Takes O(n) search time. Therefore we can discard it as well.
 
-7. Hash table - As per the above table it is way better than even binary search tree, with O(1) search/insertion/deletion. Must for shortlisting. Right? Let us shortlist this as well.
+7. Binary search tree - O(log n) search time, also insertion and deletion overhead is also O(log n). Best among all, till now. Let us shortlist this.
+
+8. Heap - O(n) search time, so we can discard this.
+
+9. Hash table - As per the above table it is way better than even binary search tree, with O(1) search/insertion/deletion. Must for shortlisting. Right? Let us shortlist this as well.
 
 10. B-Tree - For worst-case analysis, it too has the same properties as of a binary search tree. Since we have shortlisted BST, we must shortlist this as well.
 
