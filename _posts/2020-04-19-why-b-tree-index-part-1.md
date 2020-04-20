@@ -1,4 +1,7 @@
-# Why databases use B+ tree for indexing? - Part I 
+---
+layout: post
+title: Why databases use B+ tree for indexing? - Part I 
+---
 
 So the first question is - "What is indexing and why we need it?"
 
