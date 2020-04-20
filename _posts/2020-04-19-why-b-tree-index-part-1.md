@@ -34,10 +34,11 @@ But if you have one more table (say `NameIndex`), with structure:
 
 Then in this case, what you can do is since you know in  `NameIndex` table, column `Name` is in lexicographical order, you will search the name `Nitin` first and then in `Favourite Movie` table look for the corresponding `S.No.` which is in numerical order.
 
-*[When column are in numerical/lexicographical order you don't need to do full column scan O(n), instead Binary search O(log n) will be way better]*
-*[Also, while writing/inserting data in `FavMovie`, there will be extra cost to maintain `NameIndex`]*
+*[When column are in numerical/lexicographical order you don't need to do full column scan O(n), instead Binary search O(log n) will be way better]*  
+*[While writing/inserting data in `FavMovie`, there will be extra cost to maintain `NameIndex`]*
 
 So, using one additional table we were able to improve over search speed on the column `Name`. That's exactly what is indexing.
+
 
 From [Wikipedia](https://en.wikipedia.org/wiki/Database_index "Wikipedia"):
 
@@ -46,7 +47,7 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Database_index "Wikipedia"):
 
 From the definition above, we move to our second question - "Which data structure is used for indexing?"
 
-Again taking help from a Wikipedia article - [Search data structure](https://en.wikipedia.org/wiki/Search_data_structure "Search data structure"), which lists all data structures used in searching and their amortized analysis. Below table is the extract from the above article:
+Again taking help from a Wikipedia article - [Search data structure](https://en.wikipedia.org/wiki/Search_data_structure "Search data structure"), which lists all data structures used for searching and their amortized analysis. Below table is the extract from the article:
 
 | S.No. | Data Structure | Insert | Delete | Get at index | Search | Space usage |
 | ----- | ------ | ------------ | ------------ | ------------ | ------------ | ------------ |
@@ -69,7 +70,7 @@ Let us, now analyze each data structure:
 
 3. Stack - Getting the last inserted element will take O(1) time but for other search purposes, just like an unsorted array it also takes O(n) search time. Therefore we can discard it as well.
 
-4. Queue - Similar to stack (FIFO instead of LIFO) it also takes O(n) search time. Therefore we can discard it as well.
+4. Queue - Similar to stack (just FIFO instead of LIFO) it also takes O(n) search time. Therefore we can discard it as well.
 
 5. Unsorted linked list - Takes O(n) search time. Therefore we can discard it as well.
 
@@ -82,6 +83,7 @@ Let us, now analyze each data structure:
 9. Hash table - As per the above table it is way better than even binary search tree, with O(1) search/insertion/deletion. Must for shortlisting. Right? Let us shortlist this as well.
 
 10. B-Tree - For worst-case analysis, it too has the same properties as of a binary search tree. Since we have shortlisted BST, we must shortlist this as well.
+
 
 **So, from above we have shortlisted three data structures:**
 - Binary search tree (BST)
