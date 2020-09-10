@@ -30,7 +30,7 @@ stackoverflow_username: "4903663"
 theme: minima
 plugins:
   - jekyll-feed
-
+  - jekyll-news-sitemap
 
 google_analytics: UA-164009767-1
 
