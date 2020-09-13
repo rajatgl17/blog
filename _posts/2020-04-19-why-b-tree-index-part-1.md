@@ -90,4 +90,4 @@ Let us, now analyze each data structure:
 - Heap
 - B-Tree
 
-Let's wrap this post here and compare the above three in the next post.
+Let's wrap this post here and compare the above three in the [next post]({% post_url 2020-04-19-why-b-tree-index-part-2 %}).
