@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why databases use B+ tree for indexing? - Part II (WIP - not complete yet)
+title: Why databases use B+ tree for indexing? - Part II
 ---
 
 In the previous article we have seen/shortlisted three data structures that can be used for indexing purpose. If you haven't seen my previous post, you can find it [here]({% post_url 2020-04-19-why-b-tree-index-part-1 %}).
