@@ -3,7 +3,7 @@ layout: post
 title: Why databases use B+ tree for indexing? - Part II (WIP - not complete yet)
 ---
 
-In the previous article we have seen/shortlisted three data structures that can be used for indexing purpose. If you haven't seen my previous post, you can find it [here](https://rajatgl17.github.io/blog/2020/04/19/why-b-tree-index-part-1.html).
+In the previous article we have seen/shortlisted three data structures that can be used for indexing purpose. If you haven't seen my previous post, you can find it [here]({% post_url 2020-04-19-why-b-tree-index-part-1 %}).
 
 Let us do a recap, before we begin.
 
