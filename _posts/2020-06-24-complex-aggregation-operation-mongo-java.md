@@ -21,8 +21,8 @@ To simply convert it into Spring Mongo Template Java code:
 		import org.springframework.data.mongodb.core.aggregation.AggregationOperationContext;
 
 		public class JsonAggregationOperation implements AggregationOperation {
-
-	    		private String jsonOperation;
+		
+		    private String jsonOperation;
 
 		    public JsonAggregationOperation(String jsonOperation) {
 			this.jsonOperation = jsonOperation;
@@ -52,13 +52,13 @@ To simply convert it into Spring Mongo Template Java code:
 		    MongoTemplate mongoTemplate;
 
 		    public void complexAggregationOperation() {
-			List<AggregationOperation> aggOps = new ArrayList<>();
-			aggOps.add(new JsonAggregationOperation("{ $project : { month_joined : { $month : "$joined" } } }"));
-			aggOps.add(new JsonAggregationOperation("{ $group : { _id : {month_joined:"$month_joined"} , number : { $sum : 1 } } }"));
-			aggOps.add(new JsonAggregationOperation("{ $sort : { "_id.month_joined" : 1 } }"));
+			 List<AggregationOperation> aggOps = new ArrayList<>();
+			 aggOps.add(new JsonAggregationOperation("{ $project : { month_joined : { $month : "$joined" } } }"));
+			 aggOps.add(new JsonAggregationOperation("{ $group : { _id : {month_joined:"$month_joined"} , number : { $sum : 1 } } }"));
+			 aggOps.add(new JsonAggregationOperation("{ $sort : { "_id.month_joined" : 1 } }"));
 
-			Aggregation aggregation = Aggregation.newAggregation(aggOps)
+			 Aggregation aggregation = Aggregation.newAggregation(aggOps)
 				.withOptions(Aggregation.newAggregationOptions().allowDiskUse(true).build());
-			List<Object> records = mongoTemplate.aggregate(aggregation, "users", Object.class).getMappedResults();
+			 List<Object> records = mongoTemplate.aggregate(aggregation, "users", Object.class).getMappedResults();
 		    }
 		}
