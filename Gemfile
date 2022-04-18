@@ -30,7 +30,4 @@ gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 gem 'jekyll-news-sitemap'
 
-#Added as suggested by Github security bot 
-gem "rack", ">= 2.1.4"
-
-
+gem "webrick", "~> 1.7"
