@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why databases use B+ tree for indexing? - Part I 
-description: Explained data struture used by databased like MySQL for indexing
+description: Explained data struture used by databases like MySQL for indexing
 author: Rajat Goel
 ---
 
