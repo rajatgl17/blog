@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Delayed Retry Framework
+description: Delayed retry framework and options for delayed messaging queue
+author: Rajat Goel
 ---
 
 ## Pseudo Code:
