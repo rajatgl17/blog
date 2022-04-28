@@ -1,6 +1,8 @@
 ---
 layout: post
-title: Distributed lock implementation using Redis in Java
+title: Distributed lock implementation using Redis in Java and Spring
+description: Implementing distributed lock in spring framrwork using redis
+author: Rajat Goel
 ---
 
 1. Create annotation
