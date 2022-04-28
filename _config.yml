@@ -56,3 +56,6 @@ minima:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+disqus:
+    shortname: rajatgl17-blog
