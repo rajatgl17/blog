@@ -1,6 +1,8 @@
 ---
 title: Why databases use B+ tree for indexing? - Part II
 layout: post
+description: Explained why tree data structures are better than hash for indexing ind databases
+author: Rajat Goel
 ---
 
 In the previous article we have seen/shortlisted three data structures that can be used for indexing purpose. If you haven't seen my previous post, you can find it [here]({% post_url 2020-04-19-why-b-tree-index-part-1 %}).
