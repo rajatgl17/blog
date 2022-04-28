@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Writing complex mongo aggreation operation in Java (Spring Mongo Template)
+description: Converting mongodb javascipt json queries directly to spring mongo
+author: Rajat Goel
 ---
 
 Take eg of. any MongoDB aggregation operation like:
