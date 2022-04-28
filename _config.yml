@@ -19,6 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Blog
+description: A tech blog related mostly to java, spring, databases and big data 
+author: Rajat Goel
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://rajatgl17.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
