@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to Easily Switch Between Multiple Java Versions on macOS Using Homebrew
+description: How to Easily Switch Between Multiple Java Versions on macOS Using Homebrew
 author: Rajat Goel
 ---
 
