@@ -12,9 +12,9 @@ Let us start with, how anyone (human/machine) searches. Say you have a table (le
 |S.No.| Name  | Movie  |
 | ------------ | ------------ | ------------ |
 | 1 | Rahul  | 3 Idiots  |
-| 2 | Ayush | Raaz  |
-| 3 | Nitin   | 3 Idiots  |
-| 4 | Pradeep  | Masti  |
+| 2 | Ayush | Sholay  |
+| 3 | Nitin   | Bahubali  |
+| 4 | Pradeep  | Deewar  |
 | 5 |  Raghav | DDLJ  |
 
 *[Visualize above table with millions of rows]*  
