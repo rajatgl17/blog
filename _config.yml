@@ -26,7 +26,7 @@ url: "https://rajatgl17.github.io" # the base hostname & protocol for your site,
 
 github_username: rajatgl17
 linkedin_username: rajatgl17
-stackoverflow_username: 4903663
+stackoverflow_username: "4903663"
 
 # Build settings
 theme: minima
