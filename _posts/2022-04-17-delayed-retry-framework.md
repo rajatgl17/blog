@@ -16,7 +16,7 @@ The first step is to create an interface that defines the contract for any opera
         void onSucess(Request, Response)
         void onFailure(Request, Exception)
         
-###Main Logic for Retrying Operations
+### Main Logic for Retrying Operations
 The core logic of the delayed retry framework is encapsulated in the DelayedRetryable class, which handles the submission and processing of retryable operations.
 
     DelayedRetryable
